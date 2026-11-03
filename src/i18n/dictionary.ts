@@ -102,7 +102,7 @@ const ko = {
       { label: '문의', href: '#contact' },
     ],
     copyright: '© 2026 STELLA&. All rights reserved.',
-    slogan: 'Story In, Moving Out',
+    slogan: 'Story In, Motion Out',
   },
 }
 
@@ -223,7 +223,7 @@ const en: typeof ko = {
       { label: 'Contact', href: '#contact' },
     ],
     copyright: '© 2026 STELLA&. All rights reserved.',
-    slogan: 'Story In, Moving Out',
+    slogan: 'Story In, Motion Out',
   },
 }
 
@@ -343,7 +343,7 @@ const ja: typeof ko = {
       { label: 'お問い合わせ', href: '#contact' },
     ],
     copyright: '© 2026 STELLA&. All rights reserved.',
-    slogan: 'Story In, Moving Out',
+    slogan: 'Story In, Motion Out',
   },
 }
 
