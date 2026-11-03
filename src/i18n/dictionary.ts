@@ -10,7 +10,7 @@ const ko = {
   header: {
     nav: {
       ai: 'AI 숏폼',
-      audio: '오디오웹툰',
+      audio: '제작 하이라이트',
       motion: '모션툰',
     },
     officialSite: '공식 사이트',

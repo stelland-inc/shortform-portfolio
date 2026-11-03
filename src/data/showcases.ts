@@ -70,7 +70,7 @@ const AI_SAMPLES_RAW: LocalizedWork[] = [
 // CATEGORY 02 — 오디오웹툰
 const AUDIO_WORKS_RAW: LocalizedWork[] = [
   {
-    title: { ko: 'Bad Girl', en: 'Bad Girl', ja: 'Bad Girl' },
+    title: { ko: '달려라하니', en: 'Bad Girl', ja: 'Bad Girl' },
     platform: {
       ko: '극장용 예고편',
       en: 'Theatrical Trailer',
@@ -83,7 +83,7 @@ const AUDIO_WORKS_RAW: LocalizedWork[] = [
   },
   {
     title: {
-      ko: 'Dinos',
+      ko: 'NC다이노스',
       en: 'Dinos',
       ja: 'Dinos',
     },
@@ -99,7 +99,7 @@ const AUDIO_WORKS_RAW: LocalizedWork[] = [
   },
   {
     title: {
-      ko: 'Line',
+      ko: '라인프렌즈',
       en: 'Line',
       ja: 'Line',
     },
@@ -114,7 +114,7 @@ const AUDIO_WORKS_RAW: LocalizedWork[] = [
     videoUrl: `${AUDIO_VIDEO_BASE}/line.mp4`,
   },
   {
-    title: { ko: 'Red Rex', en: 'Red Rex', ja: 'Red Rex' },
+    title: { ko: '레드렉스', en: 'Red Rex', ja: 'Red Rex' },
     platform: {
       ko: '숏폼 영상',
       en: 'Short-form',
@@ -127,7 +127,7 @@ const AUDIO_WORKS_RAW: LocalizedWork[] = [
   },
   {
     title: {
-      ko: 'Totem',
+      ko: '토템',
       en: 'Totem',
       ja: 'Totem',
     },
