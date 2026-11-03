@@ -113,7 +113,7 @@ const en: typeof ko = {
   header: {
     nav: {
       ai: 'AI Short-form',
-      audio: 'Audio Webtoon',
+      audio: 'Video',
       motion: 'Motion Toon',
     },
     officialSite: 'Official Site',
@@ -189,7 +189,7 @@ const en: typeof ko = {
   },
   audioWebtoon: {
     eyebrow: 'Category 02',
-    title: 'Audio Webtoon',
+    title: 'Video',
     description:
       'Vertical-format content where speech bubbles and panels move exactly as directed in the original. First released as a fan-funded product, now expanding into an integrated online/offline offering.',
   },

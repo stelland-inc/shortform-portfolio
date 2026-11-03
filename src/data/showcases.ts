@@ -75,7 +75,7 @@ const AI_SAMPLES_RAW: LocalizedWork[] = [
 // CATEGORY 02 — 오디오웹툰
 const AUDIO_WORKS_RAW: LocalizedWork[] = [
   {
-    title: { ko: '집이없어', en: 'I Have No Home', ja: '家がない' },
+    title: { ko: 'Bad Girl', en: 'Bad Girl', ja: 'Bad Girl' },
     platform: {
       ko: '네이버웹툰',
       en: 'Naver Webtoon',
@@ -93,9 +93,9 @@ const AUDIO_WORKS_RAW: LocalizedWork[] = [
   },
   {
     title: {
-      ko: '살아남은 로맨스',
-      en: 'Surviving Romance',
-      ja: '生き残ったロマンス',
+      ko: 'Dinos',
+      en: 'Dinos',
+      ja: 'Dinos',
     },
     platform: {
       ko: '네이버웹툰',
@@ -114,9 +114,9 @@ const AUDIO_WORKS_RAW: LocalizedWork[] = [
   },
   {
     title: {
-      ko: '시월드가 내게 집착한다',
-      en: 'My In-Laws Are Obsessed With Me',
-      ja: '義実家が私に執着する',
+      ko: 'Line',
+      en: 'Line',
+      ja: 'Line',
     },
     platform: {
       ko: '네이버웹툰',
@@ -134,7 +134,7 @@ const AUDIO_WORKS_RAW: LocalizedWork[] = [
     videoUrl: `${AUDIO_VIDEO_BASE}/line.mp4`,
   },
   {
-    title: { ko: '프레너미', en: 'Frenemy', ja: 'フレネミー' },
+    title: { ko: 'Red Rex', en: 'Red Rex', ja: 'Red Rex' },
     platform: {
       ko: '카카오웹툰',
       en: 'Kakao Webtoon',
@@ -152,9 +152,9 @@ const AUDIO_WORKS_RAW: LocalizedWork[] = [
   },
   {
     title: {
-      ko: '악녀를 죽여줘',
-      en: 'Kill the Villainess',
-      ja: '悪女を殺して',
+      ko: 'Totem',
+      en: 'Totem',
+      ja: 'Totem',
     },
     platform: { ko: '카카오페이지', en: 'Kakao Page', ja: 'カカオページ' },
     stats: {
