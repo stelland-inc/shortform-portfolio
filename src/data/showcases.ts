@@ -10,6 +10,11 @@ const THUMB_BASE =
 // Supabase Storage(videos 버킷, public)에 업로드된 원본 영상
 const VIDEO_BASE =
   'https://imyjohoymzmbaytkhhqk.supabase.co/storage/v1/object/public/videos'
+// 오디오웹툰 섹션 전용: 별도 Supabase 프로젝트의 public 버킷
+const AUDIO_THUMB_BASE =
+  'https://tmamddsbsnfekrosrnzs.supabase.co/storage/v1/object/public/thumbnails'
+const AUDIO_VIDEO_BASE =
+  'https://tmamddsbsnfekrosrnzs.supabase.co/storage/v1/object/public/videos'
 
 type LocalizedWork = {
   title: Record<Locale, string>
@@ -82,9 +87,9 @@ const AUDIO_WORKS_RAW: LocalizedWork[] = [
       ja: ['全300話完結・平均評点9.9', '2021 今日の我が漫画賞'],
     },
     tone: 'from-ink to-accent-ink',
-    posterUrl: `${THUMB_BASE}/audio-1.png`,
+    posterUrl: `${AUDIO_THUMB_BASE}/badgirl.jpg`,
     qrUrl: `${QR_BASE}/audio-1.png`,
-    videoUrl: `${VIDEO_BASE}/audio-1.mp4`,
+    videoUrl: `${AUDIO_VIDEO_BASE}/badgirl.mp4`,
   },
   {
     title: {
@@ -103,9 +108,9 @@ const AUDIO_WORKS_RAW: LocalizedWork[] = [
       ja: ['有料貸本作品初の評点9.98', '単行本7巻・多言語連載'],
     },
     tone: 'from-accent to-amber',
-    posterUrl: `${THUMB_BASE}/audio-2.png`,
+    posterUrl: `${AUDIO_THUMB_BASE}/dinos.jpg`,
     qrUrl: `${QR_BASE}/audio-2.png`,
-    videoUrl: `${VIDEO_BASE}/audio-2.mp4`,
+    videoUrl: `${AUDIO_VIDEO_BASE}/dinos.mp4`,
   },
   {
     title: {
@@ -124,9 +129,9 @@ const AUDIO_WORKS_RAW: LocalizedWork[] = [
       ja: ['英語版購読160万・閲覧1.38億', 'ファンタジーロマンス最上位'],
     },
     tone: 'from-amber to-star',
-    posterUrl: `${THUMB_BASE}/audio-3.png`,
+    posterUrl: `${AUDIO_THUMB_BASE}/line.jpg`,
     qrUrl: `${QR_BASE}/audio-3.png`,
-    videoUrl: `${VIDEO_BASE}/audio-3.mp4`,
+    videoUrl: `${AUDIO_VIDEO_BASE}/line.mp4`,
   },
   {
     title: { ko: '프레너미', en: 'Frenemy', ja: 'フレネミー' },
@@ -141,9 +146,9 @@ const AUDIO_WORKS_RAW: LocalizedWork[] = [
       ja: ['累計閲覧1.4億・関心134万', 'カカオ代表スポーツIP'],
     },
     tone: 'from-accent-ink to-accent',
-    posterUrl: `${THUMB_BASE}/audio-4.png`,
+    posterUrl: `${AUDIO_THUMB_BASE}/redrex.jpg`,
     qrUrl: `${QR_BASE}/audio-4.png`,
-    videoUrl: `${VIDEO_BASE}/audio-4.mp4`,
+    videoUrl: `${AUDIO_VIDEO_BASE}/redrex.mp4`,
   },
   {
     title: {
@@ -158,9 +163,9 @@ const AUDIO_WORKS_RAW: LocalizedWork[] = [
       ja: ['累計閲覧4,300万・評点10.0', 'カカオページ代表ロファン'],
     },
     tone: 'from-star to-amber',
-    posterUrl: `${THUMB_BASE}/audio-5.png`,
+    posterUrl: `${AUDIO_THUMB_BASE}/totem.jpg`,
     qrUrl: `${QR_BASE}/audio-5.png`,
-    videoUrl: `${VIDEO_BASE}/audio-5.mp4`,
+    videoUrl: `${AUDIO_VIDEO_BASE}/totem.mp4`,
   },
 ]
 
