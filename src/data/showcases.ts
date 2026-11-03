@@ -19,7 +19,6 @@ const AUDIO_VIDEO_BASE =
 type LocalizedWork = {
   title: Record<Locale, string>
   platform?: Record<Locale, string>
-  stats: Record<Locale, string[]>
   tone: string
   qrUrl: string
   posterUrl: string
@@ -31,7 +30,6 @@ function localize(work: LocalizedWork, locale: Locale): Work {
   return {
     title: work.title[locale],
     platform: work.platform?.[locale],
-    stats: work.stats[locale],
     tone: work.tone,
     qrUrl: work.qrUrl,
     posterUrl: work.posterUrl,
@@ -44,7 +42,6 @@ function localize(work: LocalizedWork, locale: Locale): Work {
 const AI_SAMPLES_RAW: LocalizedWork[] = [
   {
     title: { ko: '〈팔찌의 주인〉', en: "〈The Bracelet's Owner〉", ja: '〈ブレスレットの主〉' },
-    stats: { ko: [], en: [], ja: [] },
     tone: 'from-amber to-star',
     posterUrl: `${THUMB_BASE}/ai-1.png`,
     qrUrl: `${QR_BASE}/ai-3.png`,
@@ -52,7 +49,6 @@ const AI_SAMPLES_RAW: LocalizedWork[] = [
   },
   {
     title: { ko: '〈SANTA〉', en: '〈SANTA〉', ja: '〈SANTA〉' },
-    stats: { ko: [], en: [], ja: [] },
     tone: 'from-ink to-accent-ink',
     posterUrl: `${THUMB_BASE}/ai-2.png`,
     qrUrl: `${QR_BASE}/ai-1.png`,
@@ -64,7 +60,6 @@ const AI_SAMPLES_RAW: LocalizedWork[] = [
       en: "〈This Time, I'll Raise You Right, Your Majesty!〉",
       ja: '〈今度こそちゃんと育てます、陛下！〉',
     },
-    stats: { ko: [], en: [], ja: [] },
     tone: 'from-accent to-amber',
     posterUrl: `${THUMB_BASE}/ai-3.png`,
     qrUrl: `${QR_BASE}/ai-2.png`,
@@ -77,14 +72,9 @@ const AUDIO_WORKS_RAW: LocalizedWork[] = [
   {
     title: { ko: 'Bad Girl', en: 'Bad Girl', ja: 'Bad Girl' },
     platform: {
-      ko: '네이버웹툰',
-      en: 'Naver Webtoon',
-      ja: 'NAVERウェブトゥーン',
-    },
-    stats: {
-      ko: ['300화 완결 · 평균 별점 9.9', '2021 오늘의 우리만화상'],
-      en: ['300 episodes · Rating 9.9', '2021 Webtoon Award'],
-      ja: ['全300話完結・平均評点9.9', '2021 今日の我が漫画賞'],
+      ko: '극장용 예고편',
+      en: 'Theatrical Trailer',
+      ja: '劇場用トレーラー',
     },
     tone: 'from-ink to-accent-ink',
     posterUrl: `${AUDIO_THUMB_BASE}/badgirl.jpg`,
@@ -98,14 +88,9 @@ const AUDIO_WORKS_RAW: LocalizedWork[] = [
       ja: 'Dinos',
     },
     platform: {
-      ko: '네이버웹툰',
-      en: 'Naver Webtoon',
-      ja: 'NAVERウェブトゥーン',
-    },
-    stats: {
-      ko: ['유료 대여작 최초 별점 9.98', '단행본 7권 · 다국어 연재'],
-      en: ['First paid rental at 9.98', '7 volumes · multilingual'],
-      ja: ['有料貸本作品初の評点9.98', '単行本7巻・多言語連載'],
+      ko: '브랜드 영상',
+      en: 'Brand',
+      ja: 'ブランド映像',
     },
     tone: 'from-accent to-amber',
     posterUrl: `${AUDIO_THUMB_BASE}/dinos.jpg`,
@@ -119,14 +104,9 @@ const AUDIO_WORKS_RAW: LocalizedWork[] = [
       ja: 'Line',
     },
     platform: {
-      ko: '네이버웹툰',
-      en: 'Naver Webtoon',
-      ja: 'NAVERウェブトゥーン',
-    },
-    stats: {
-      ko: ['영어판 구독 160만 · 조회 1.38억', '판타지 로맨스 최상위'],
-      en: ['1.6M EN subs · 138M views', 'Top-tier fantasy romance'],
-      ja: ['英語版購読160万・閲覧1.38億', 'ファンタジーロマンス最上位'],
+      ko: '브랜드 영상',
+      en: 'Brand',
+      ja: 'ブランド映像',
     },
     tone: 'from-amber to-star',
     posterUrl: `${AUDIO_THUMB_BASE}/line.jpg`,
@@ -136,14 +116,9 @@ const AUDIO_WORKS_RAW: LocalizedWork[] = [
   {
     title: { ko: 'Red Rex', en: 'Red Rex', ja: 'Red Rex' },
     platform: {
-      ko: '카카오웹툰',
-      en: 'Kakao Webtoon',
-      ja: 'カカオウェブトゥーン',
-    },
-    stats: {
-      ko: ['누적 조회 1.4억 · 관심 134만', '카카오 대표 스포츠 IP'],
-      en: ['140M views · 1.34M follows', "Kakao's flagship sports IP"],
-      ja: ['累計閲覧1.4億・関心134万', 'カカオ代表スポーツIP'],
+      ko: '숏폼 영상',
+      en: 'Short-form',
+      ja: 'ショートフォーム映像',
     },
     tone: 'from-accent-ink to-accent',
     posterUrl: `${AUDIO_THUMB_BASE}/redrex.jpg`,
@@ -156,12 +131,7 @@ const AUDIO_WORKS_RAW: LocalizedWork[] = [
       en: 'Totem',
       ja: 'Totem',
     },
-    platform: { ko: '카카오페이지', en: 'Kakao Page', ja: 'カカオページ' },
-    stats: {
-      ko: ['누적 열람 4,300만 · 별점 10.0', '카카오페이지 대표 로판'],
-      en: ['43M reads · Perfect 10.0', "Kakao Page's top romance IP"],
-      ja: ['累計閲覧4,300万・評点10.0', 'カカオページ代表ロファン'],
-    },
+    platform: { ko: 'TV 시리즈 파일럿 영상', en: 'TV Series Pilot', ja: 'TVシリーズパイロット' },
     tone: 'from-star to-amber',
     posterUrl: `${AUDIO_THUMB_BASE}/totem.jpg`,
     qrUrl: `${QR_BASE}/audio-5.png`,
@@ -177,11 +147,6 @@ const MOTION_WORKS_RAW: LocalizedWork[] = [
       en: 'Batman: Wayne Family Adventures',
       ja: 'バットマン：ウェイン・ファミリー・アドベンチャーズ',
     },
-    stats: {
-      ko: ['DC 코믹스 공식 IP', '네이버웹툰 오리지널'],
-      en: ['Official DC Comics IP', 'Naver Webtoon Original'],
-      ja: ['DCコミックス公式IP', 'NAVERウェブトゥーンオリジナル'],
-    },
     tone: 'from-ink to-amber',
     posterUrl: `${THUMB_BASE}/motion-1.png`,
     qrUrl: `${QR_BASE}/motion-1.png`,
@@ -193,11 +158,6 @@ const MOTION_WORKS_RAW: LocalizedWork[] = [
       en: 'Hell Is Other People',
       ja: '他人は地獄だ',
     },
-    stats: {
-      ko: ['누적 조회 상위 스릴러', '드라마 영상화 원작'],
-      en: ['Top thriller by views', 'Adapted into a live drama'],
-      ja: ['累計閲覧上位スリラー', 'ドラマ映像化原作'],
-    },
     tone: 'from-ink to-accent-ink',
     posterUrl: `${THUMB_BASE}/motion-2.png`,
     qrUrl: `${QR_BASE}/motion-2.png`,
@@ -205,11 +165,6 @@ const MOTION_WORKS_RAW: LocalizedWork[] = [
   },
   {
     title: { ko: '더 복서', en: 'The Boxer', ja: 'ザ・ボクサー' },
-    stats: {
-      ko: ['스포츠 액션', '타격감과 사운드 시너지'],
-      en: ['Sports action', 'Powerful hits, rich sound'],
-      ja: ['スポーツアクション', '打撃感とサウンドのシナジー'],
-    },
     tone: 'from-accent-ink to-accent',
     posterUrl: `${THUMB_BASE}/motion-3.png`,
     qrUrl: `${QR_BASE}/motion-3.png`,

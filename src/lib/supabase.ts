@@ -13,7 +13,6 @@ export type WorkRow = {
   category: 'ai' | 'audio' | 'motion'
   title: string
   platform: string | null
-  stats: string[] | null
   video_url: string | null
   poster_url: string | null
   link_url: string | null

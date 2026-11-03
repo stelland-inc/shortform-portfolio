@@ -16,7 +16,6 @@ function mapRow(row: WorkRow, i: number): Work {
   return {
     title: row.title,
     platform: row.platform ?? undefined,
-    stats: row.stats ?? [],
     tone: TONES[i % TONES.length],
     videoUrl: row.video_url ?? undefined,
     posterUrl: row.poster_url ?? undefined,

@@ -9,7 +9,6 @@ const EASE = [0.32, 0.72, 0, 1] as const
 export type Work = {
   title: string
   platform?: string
-  stats: string[]
   tone: string
   videoUrl?: string
   posterUrl?: string
@@ -162,7 +161,7 @@ function WorkCard({ work, aspect }: { work: Work; aspect: string }) {
       </div>
 
       {/* 메타 */}
-      <div className="px-2.5 py-4">
+      <div className="px-2.5 pb-3 pt-4">
         <h3
           className="line-clamp-2 min-h-[2.75em] font-semibold leading-snug text-ink"
           title={work.title}
@@ -174,17 +173,6 @@ function WorkCard({ work, aspect }: { work: Work; aspect: string }) {
             {work.platform}
           </span>
         )}
-        <div className="mt-3 space-y-0.5">
-          {work.stats.map((s) => (
-            <p
-              key={s}
-              className="line-clamp-2 min-h-[2.75em] text-[13px] leading-snug text-muted"
-              title={s}
-            >
-              {s}
-            </p>
-          ))}
-        </div>
       </div>
     </motion.article>
   )

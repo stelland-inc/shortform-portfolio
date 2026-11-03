@@ -68,9 +68,9 @@ const ko = {
   },
   audioWebtoon: {
     eyebrow: 'Category 02',
-    title: '오디오웹툰',
+    title: '제작 하이라이트',
     description:
-      '말풍선과 컷이 원작 연출 그대로 움직이는 세로형 콘텐츠입니다. 팬 대상 펀딩 상품으로 먼저 공개했고, 온·오프라인 통합 상품으로 전개합니다.',
+      '애니메이션, 광고, 브랜드 콘텐츠 등 다양한 프로젝트의 주요 장면을 담은 하이라이트 영상입니다. 스텔라앤의 영상 연출력과 제작 역량을 한눈에 보여줍니다.',
   },
   motionToon: {
     eyebrow: 'Category 03',
@@ -113,7 +113,7 @@ const en: typeof ko = {
   header: {
     nav: {
       ai: 'AI Short-form',
-      audio: 'Video',
+      audio: 'Showreel',
       motion: 'Motion Toon',
     },
     officialSite: 'Official Site',
@@ -189,9 +189,9 @@ const en: typeof ko = {
   },
   audioWebtoon: {
     eyebrow: 'Category 02',
-    title: 'Video',
+    title: 'Showreel',
     description:
-      'Vertical-format content where speech bubbles and panels move exactly as directed in the original. First released as a fan-funded product, now expanding into an integrated online/offline offering.',
+      'A showcase of highlights from our animation, commercials, and branded content projects. Discover Stella&’s creative direction and production expertise across diverse formats.',
   },
   motionToon: {
     eyebrow: 'Category 03',
