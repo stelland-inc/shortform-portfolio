@@ -1,0 +1,34 @@
+# Logs
+logs
+*.log
+npm-debug.log*
+
+# Dependencies
+node_modules
+dist
+dist-ssr
+*.local
+*.tsbuildinfo
+
+# Editor
+.vscode/*
+!.vscode/extensions.json
+.idea
+.DS_Store
+
+# Vercel
+.vercel
+
+# Env
+.env
+
+# 내부 자료 (공개 저장소 제외)
+스텔라앤 포트폴리오.pdf
+_pdf_pages/
+썸네일_다운로드_목록.md
+
+# 원본 이미지/영상 업로드 스테이징 (실제 사이트는 Supabase Storage URL을 사용)
+public/
+
+# Supabase CLI 로컬 캐시
+supabase/.temp
