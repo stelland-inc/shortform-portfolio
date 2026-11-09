@@ -150,7 +150,7 @@ const MOTION_WORKS_RAW: LocalizedWork[] = [
     tone: 'from-ink to-amber',
     posterUrl: `${THUMB_BASE}/motion-1.png`,
     qrUrl: `${QR_BASE}/motion-1.png`,
-    videoUrl: `${VIDEO_BASE}/motion-1.mp4`,
+    videoUrl: `${AUDIO_VIDEO_BASE}/motion-1.mp4`,
   },
   {
     title: {
@@ -161,14 +161,14 @@ const MOTION_WORKS_RAW: LocalizedWork[] = [
     tone: 'from-ink to-accent-ink',
     posterUrl: `${THUMB_BASE}/motion-2.png`,
     qrUrl: `${QR_BASE}/motion-2.png`,
-    videoUrl: `${VIDEO_BASE}/motion-2.mp4`,
+    videoUrl: `${AUDIO_VIDEO_BASE}/motion-2.mp4`,
   },
   {
     title: { ko: '더 복서', en: 'The Boxer', ja: 'ザ・ボクサー' },
     tone: 'from-accent-ink to-accent',
     posterUrl: `${THUMB_BASE}/motion-3.png`,
     qrUrl: `${QR_BASE}/motion-3.png`,
-    videoUrl: `${VIDEO_BASE}/motion-3.mp4`,
+    videoUrl: `${AUDIO_VIDEO_BASE}/motion-3.mp4`,
   },
 ]
 
