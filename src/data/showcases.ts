@@ -4,9 +4,6 @@ import type { Locale } from '../i18n/locale'
 // Supabase Storage(qr-codes 버킷, public)에 업로드된 QR코드 이미지
 const QR_BASE =
   'https://imyjohoymzmbaytkhhqk.supabase.co/storage/v1/object/public/qr-codes'
-// Supabase Storage(thumbnails 버킷, public)에 업로드된 썸네일 이미지
-const THUMB_BASE =
-  'https://imyjohoymzmbaytkhhqk.supabase.co/storage/v1/object/public/thumbnails'
 // 오디오웹툰 섹션 전용: 별도 Supabase 프로젝트의 public 버킷
 const AUDIO_THUMB_BASE =
   'https://tmamddsbsnfekrosrnzs.supabase.co/storage/v1/object/public/thumbnails'
