@@ -41,14 +41,14 @@ const AI_SAMPLES_RAW: LocalizedWork[] = [
     tone: 'from-amber to-star',
     posterUrl: `${AUDIO_THUMB_BASE}/ai-1.png`,
     qrUrl: `${QR_BASE}/ai-3.png`,
-    videoUrl: `${S3_VIDEO_BASE}/ai-3.mp4`,
+    videoUrl: `${S3_VIDEO_BASE}/ai-1.mp4`,
   },
   {
     title: { ko: '〈SANTA〉', en: '〈SANTA〉', ja: '〈SANTA〉' },
     tone: 'from-ink to-accent-ink',
     posterUrl: `${AUDIO_THUMB_BASE}/ai-2.png`,
     qrUrl: `${QR_BASE}/ai-1.png`,
-    videoUrl: `${S3_VIDEO_BASE}/ai-1.mp4`,
+    videoUrl: `${S3_VIDEO_BASE}/ai-2.mp4`,
   },
   {
     title: {
@@ -59,7 +59,7 @@ const AI_SAMPLES_RAW: LocalizedWork[] = [
     tone: 'from-accent to-amber',
     posterUrl: `${AUDIO_THUMB_BASE}/ai-3.png`,
     qrUrl: `${QR_BASE}/ai-2.png`,
-    videoUrl: `${S3_VIDEO_BASE}/ai-2.mp4`,
+    videoUrl: `${S3_VIDEO_BASE}/ai-3.mp4`,
   },
 ]
 
